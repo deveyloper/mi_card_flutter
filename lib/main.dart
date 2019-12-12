@@ -15,43 +15,19 @@ class MiCardApp extends StatelessWidget {
         ),
         backgroundColor: Colors.teal[600],
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                color: Colors.red[600],
-                child: SizedBox(
-                  width: 100.0,
-                  height: double.infinity,
-                ),
-              ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      color: Colors.yellow[600],
-                      width: 100.0,
-                      height: 100.0,
-                    ),
-                    Container(
-                      color: Colors.green[600],
-                      width: 100.0,
-                      height: 100.0,
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                color: Colors.blue[600],
-                child: SizedBox(
-                  width: 100.0,
-                  height: double.infinity,
-                ),
-              )
-            ],
-          ),
-        ),
+            child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage("assets/images/sign-in.png"),
+            ),
+            SizedBox(
+              width: double.infinity,
+            )
+          ],
+        )),
       ),
     );
   }
