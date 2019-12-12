@@ -9,13 +9,17 @@ class MiCardApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        appBar: AppBar(
+          backgroundColor: Colors.teal[700],
+          title: Text("Mi Card App"),
+        ),
+        backgroundColor: Colors.teal[600],
         body: SafeArea(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                color: Colors.red,
+                color: Colors.red[600],
                 child: SizedBox(
                   width: 100.0,
                   height: double.infinity,
@@ -26,12 +30,12 @@ class MiCardApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Container(
-                      color: Colors.yellow,
+                      color: Colors.yellow[600],
                       width: 100.0,
                       height: 100.0,
                     ),
                     Container(
-                      color: Colors.green,
+                      color: Colors.green[600],
                       width: 100.0,
                       height: 100.0,
                     ),
@@ -39,7 +43,7 @@ class MiCardApp extends StatelessWidget {
                 ),
               ),
               Container(
-                color: Colors.blue,
+                color: Colors.blue[600],
                 child: SizedBox(
                   width: 100.0,
                   height: double.infinity,
