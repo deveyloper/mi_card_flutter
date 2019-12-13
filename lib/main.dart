@@ -11,7 +11,7 @@ class MiCardApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.teal[700],
+          backgroundColor: Colors.teal[500],
           title: Text(
             "Mi Card App",
             style: TextStyle(
@@ -20,7 +20,7 @@ class MiCardApp extends StatelessWidget {
             ),
           ),
         ),
-        backgroundColor: Colors.teal[600],
+        backgroundColor: Colors.teal[500],
         body: SafeArea(
             child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -58,6 +58,7 @@ class MiCardApp extends StatelessWidget {
                 children: <Widget>[
                   Icon(
                     Icons.phone,
+                    size: 25.0,
                     color: Colors.teal,
                   ),
                   SizedBox(
@@ -81,6 +82,7 @@ class MiCardApp extends StatelessWidget {
                 children: <Widget>[
                   Icon(
                     Icons.email,
+                    size: 25.0,
                     color: Colors.teal,
                   ),
                   SizedBox(
